@@ -23,8 +23,11 @@ import java.util.Arrays;
 public class Must2 {
 
     public void array(){
+        //two ways to init array
         int arr[] = {1,2,3};
         int arr2[] = new int[4];  //default value [0, 0, 0, 0]
+
+        //o/p
         System.out.println("--------basic array-------");
         System.out.println("print elem by index, arr[2]=" + arr[2]);
         System.out.println("print all elem of arr (use deepToString for 2D/3D array)=" + Arrays.toString(arr));
