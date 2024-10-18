@@ -6,6 +6,7 @@
 import java.util.Arrays;
 
 /***
+ *  NOTE: In this Must2.java we have more than one class defined but as convention only one class per file is defined
  *  String
  *  Array
  *  Class
@@ -13,7 +14,7 @@ import java.util.Arrays;
  *  Enum
  *  Annotation
  *
- * 1. It is Class & is different from Java Collections class
+ * 1. It is Class & is different from Java Collections class (but both in lib java.utils)
  * 2. it begins with Uppercase==coz Class
  * 3. can be null
  * 4. it has methods == coz Class
