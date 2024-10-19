@@ -44,8 +44,9 @@ boolean b = 0;  //ERROR incompatible types
  * but narrowing will give compile error
  * we can cast from any type to any type
  */
-Hierarchy:
-double -> float -> long -> int -> char -> short -> byte
+
+// Hierarchy: double > float > long > int > char > short > byte
+
 e.g:
         int i = 10;
         double d = i;  // Allowed widening
