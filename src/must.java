@@ -7,15 +7,22 @@
  * 1. can't be null
  * 2. no method associated coz it is not a Class
  * 3. starts with lowercase
- * 4. PDT is different from class Integer, Long Float Character, Byte, Short
+ * 4. PDT is different from its equivalent Collections class e.g. int is not same as Integer (although they both store
+ * integer but Class Integer has more functionality coz Integer class is wrapper over PDT int), Long Float Character,
+ * Byte, Short
+ * 5. PDT doesn't auto type cast like C
  */
 
 // Note creating var without value assignment will cause compile error if read/accessed before initialised/value assigned
 int i;  //default size = 4B = -2x10^9 to +2x10^9
 int i = 100;
 int i = 1000_000_000; //readble
-int i = 0b101;  //storing 5 in int format i
+int i = 0b101;  //storing 5 in int format in i (PDT does auto typecast)
 int i = 0x7E;   //stores 50 in int format in i
+
+//--↓ ERROR ↓ --
+//(PDT does auto typecast)
+int i = 1.5;    //error: incompatible types: possible lossy conversion from double to int
 
 
 short j = 32767; //size = 2B  short j = 32768; will give ERROR of incompatible types from int to short
