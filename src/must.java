@@ -17,11 +17,11 @@
 int i;  //default size = 4B = -2x10^9 to +2x10^9
 int i = 100;
 int i = 1000_000_000; //readble
-int i = 0b101;  //storing 5 in int format in i (PDT does auto typecast)
+int i = 0b101;  //storing 5 in int format in i (PDT does auto typecast if not loosing data)
 int i = 0x7E;   //stores 50 in int format in i
 
 //--↓ ERROR ↓ --
-//(PDT does auto typecast)
+//(PDT doesn't auto typecast if narrowing but does auto type case if not narrowing i.e not loosing data)
 int i = 1.5;    //error: incompatible types: possible lossy conversion from double to int
 
 
