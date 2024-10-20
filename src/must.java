@@ -4,7 +4,8 @@
 
 /***
  * PDT: 8 PDT = boolean byte char short int long float double
- * 1. can't be null
+ * 1. can't be null if used in codebase (if its unused variable then it can be declared & not defined but if used then
+ * PDT var must be defined e.g. int neverUsedVar; )
  * 2. no method associated coz it is not a Class
  * 3. starts with lowercase
  * 4. PDT is different from its equivalent Collections class e.g. int is not same as Integer (although they both store
@@ -51,7 +52,7 @@ e.g:
         int i = 10;
         double d = i;  // Allowed widening
         short s = i;   // Error incompatible types
-        short s = (short)i; //allowed but precision will be lost so large no can loop back to -ve
+        short s = (short)i; //allowed but precision will be lost so large number will be loop back to -ve
         short s1 = 1000;
         short s2 = 2000;
         int i = s1 * s2; //the result will be promoted to int to accomodate 2000000 & store in i
@@ -59,7 +60,8 @@ e.g:
         //P.S we can cast any PDT -to-> any PDT & any non-PDT Class-to-> non-PDT Class
         int i = (int)'a';  //i will store Unicode value of 'a' i.e 97 (Java follows Unicode not ASCII)
         char c = (char)97;  //c will store 'a'
-        int i  = (float)5.5;// i = 5
+        int i  = (int)5.5;// i = 5
+        int i  = (float)5.5;    //incompatible types: possible lossy conversion from float to int
 
 
 /***
