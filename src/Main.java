@@ -1,7 +1,8 @@
 
 class Main {
     public static void main(String argZee[]){
-        //Must for PDT & diff b/n PDT & Ref Type in--> src/must.java (note its written like a script so you'll find class missin error)
+        //Must for PDT & diff b/n PDT & Ref Type in--> src/must.java (note its written like a script so you'll find class missing error)
+        // to run (i.e to resolve class missing error) just comment all in must.java then run this Main.java
         Must2 m2 = new Must2();
 
         m2.array();
