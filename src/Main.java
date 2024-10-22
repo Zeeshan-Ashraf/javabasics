@@ -18,6 +18,8 @@ class Main {
         laptop.test();
 
         EnumStatus enumStatus = EnumStatus.Running;
+        System.out.println("Enum: " + enumStatus);
+        System.out.println("Enum index value: " + enumStatus.ordinal());
     }
 
 }
