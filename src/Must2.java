@@ -14,7 +14,7 @@ import java.util.Arrays;
  *  Enum
  *  Annotation
  *
- * 1. It is Class & is different from Java Collections class (but both in lib java.utils)
+ * 1. ↑ These are Class & is different from Java Collections class (but both in lib java.utils)
  * 2. it begins with Uppercase==coz Class
  * 3. can be null
  * 4. it has methods == coz Class
@@ -24,18 +24,19 @@ import java.util.Arrays;
 public class Must2 {
 
     public void array(){
-        //two ways to init array
-        int arr[] = {1,2,3};
+        //two ways to init array without collection way
+        int arr[] = {1,2,3};  //c style declaration
         int arr2[] = new int[4];  //default value [0, 0, 0, 0]
+        int[] arr3 = {6,2,3};  //java style declaration
 
         //o/p
         System.out.println("--------basic array-------");
         System.out.println("print elem by index, arr[2]=" + arr[2]);
-        System.out.println("print all elem of arr (use deepToString for 2D/3D array)=" + Arrays.toString(arr));
+        System.out.println("print all elem of arr3 (use deepToString for 2D/3D array)=" + Arrays.toString(arr3));
 
         //for-each loop to iterate over each element of arr
-        System.out.println("\nPrint each elem using for-each loop");
-        for (int item:arr) {
+        System.out.println("\nPrint each elem of arr2 using for-each loop");
+        for (int item:arr2) {
             System.out.print(item+" ");
         }
     }
